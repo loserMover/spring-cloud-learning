@@ -18,7 +18,7 @@ public class LearningController {
     private LearningProperties learningProperties;
 
     @GetMapping("/name")
-    public String learnName(){
+    public String learnName() {
         return "I LOVE YOU " + learningProperties.getName();
     }
 
