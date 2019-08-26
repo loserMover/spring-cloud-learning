@@ -48,5 +48,8 @@
         <module>spring-cloud-ribbon</module>
         <module>spring-cloud-service-provider</module>
         <module>spring-cloud-service-provider</module>
+        <module>user-service-api</module>
+        <module>user-service-provider</module>
+        <module>user-service-consumer</module>
     </modules>
 </project>
