@@ -51,5 +51,6 @@
         <module>user-service-api</module>
         <module>user-service-provider</module>
         <module>user-service-consumer</module>
+        <module>spring-cloud-netflix-dashboard</module>
     </modules>
 </project>

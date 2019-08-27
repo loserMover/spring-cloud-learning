@@ -25,6 +25,6 @@ public class IMemoryUserServiceImpl implements UserService {
 
     @Override
     public Boolean saveUser(User user) {
-        return user == mapUsers.put(user.getId(),user);
+        return user != mapUsers.put(user.getId(),user);
     }
 }

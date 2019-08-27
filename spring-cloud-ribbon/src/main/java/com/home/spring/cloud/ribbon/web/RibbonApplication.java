@@ -15,6 +15,5 @@ import org.springframework.cloud.netflix.ribbon.RibbonClients;
 public class RibbonApplication {
     public static void main(String[] args) {
         SpringApplication.run(RibbonApplication.class, args);
-
     }
 }
