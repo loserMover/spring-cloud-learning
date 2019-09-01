@@ -1,4 +1,4 @@
-package com.home.spring.cloud.user.api.web.com.home.spring.cloud.user.service.api.web.domain;
+package com.home.spring.cloud.user.service.api.web.domain;
 
 
 public class User {

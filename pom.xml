@@ -47,10 +47,10 @@
         <module>spring-cloud-consul-client</module>
         <module>spring-cloud-ribbon</module>
         <module>spring-cloud-service-provider</module>
-        <module>spring-cloud-service-provider</module>
         <module>user-service-api</module>
         <module>user-service-provider</module>
         <module>user-service-consumer</module>
         <module>spring-cloud-netflix-dashboard</module>
+        <module>spring-cloud-zuul</module>
     </modules>
 </project>

@@ -1,7 +1,7 @@
 package com.home.spring.cloud.user.service.web.controller;
 
-import com.home.spring.cloud.user.api.web.com.home.spring.cloud.user.service.api.web.domain.User;
-import com.home.spring.cloud.user.api.web.com.home.spring.cloud.user.service.api.web.service.UserService;
+import com.home.spring.cloud.user.service.api.web.domain.User;
+import com.home.spring.cloud.user.service.api.web.service.UserService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;

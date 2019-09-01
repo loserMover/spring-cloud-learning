@@ -13,7 +13,7 @@ public class UserConsumerHystrixCommand extends HystrixCommand<Collection> {
     private final RestTemplate restTemplate;
 
     public UserConsumerHystrixCommand(String userServiceProviderName, RestTemplate restTemplate) {
-        super(HystrixCommandGroupKey.Factory.asKey("spring-cloud-user-service-consumer"));
+        super(HystrixCommandGroupKey.Factory.asKey("spring-cloud-user-service-consumer"),100);
         this.userServiceProviderName = userServiceProviderName;
         this.restTemplate = restTemplate;
     }

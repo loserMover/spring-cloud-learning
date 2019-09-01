@@ -1,7 +1,7 @@
 package com.home.spring.cloud.user.service.web.service;
 
-import com.home.spring.cloud.user.api.web.com.home.spring.cloud.user.service.api.web.domain.User;
-import com.home.spring.cloud.user.api.web.com.home.spring.cloud.user.service.api.web.service.UserService;
+import com.home.spring.cloud.user.service.api.web.domain.User;
+import com.home.spring.cloud.user.service.api.web.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -25,6 +25,6 @@ public class IMemoryUserServiceImpl implements UserService {
 
     @Override
     public Boolean saveUser(User user) {
-        return user != mapUsers.put(user.getId(),user);
+        return null == mapUsers.put(user.getId(),user);
     }
 }
