@@ -52,6 +52,7 @@
         <module>user-service-consumer</module>
         <module>spring-cloud-netflix-dashboard</module>
         <module>spring-cloud-zuul</module>
-        <module>spring-cloud-stream</module>
+        <module>spring-cloud-stream-provider</module>
+        <module>spring-cloud-stream-consumer</module>
     </modules>
 </project>

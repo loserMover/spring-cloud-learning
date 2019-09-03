@@ -1,4 +1,4 @@
-package com.home.spring.cloud.stream;
+package com.home.spring.cloud.stream.provider.web;
 
 import org.springframework.boot.SpringApplication;
 
@@ -9,5 +9,5 @@ import org.springframework.boot.SpringApplication;
  * @modified by:
  */
 
-public class StreamApplication {
+public class StreamProviderApplication {
 }
