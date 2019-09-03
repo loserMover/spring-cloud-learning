@@ -1,6 +1,7 @@
 package com.home.spring.cloud.stream.provider.stream;
 
 import org.springframework.cloud.stream.annotation.Input;
+import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;
 
 /**
@@ -17,6 +18,6 @@ public interface MessageSource {
      * 绑定通道
      * @return
      */
-    @Input(value=OUTPUT)
+    @Output(value=OUTPUT)
     MessageChannel outputMessage();
 }
