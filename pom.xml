@@ -54,5 +54,6 @@
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-stream-provider</module>
         <module>spring-cloud-stream-consumer</module>
+        <module>spring-cloud-starter-stream-activemq</module>
     </modules>
 </project>

@@ -19,4 +19,7 @@ public interface MessageSink {
      */
     @Input(value=INPUT)
     SubscribableChannel inputMessage();
+
+    @Input("spring-cloud-stream-active")
+    SubscribableChannel inputActiveMQMessage();
 }

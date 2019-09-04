@@ -20,4 +20,7 @@ public interface MessageSource {
      */
     @Output(value=OUTPUT)
     MessageChannel outputMessage();
+
+    @Output(value = "spring-cloud-stream-active")
+    MessageChannel activeOutputMessage();
 }

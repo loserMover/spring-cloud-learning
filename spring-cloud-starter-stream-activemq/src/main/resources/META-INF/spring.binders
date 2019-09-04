@@ -1,0 +1,2 @@
+activemq:\
+com.home.spring.cloud.stream.binder.activemq.ActiveMQStreamBinderAutoConfiguration

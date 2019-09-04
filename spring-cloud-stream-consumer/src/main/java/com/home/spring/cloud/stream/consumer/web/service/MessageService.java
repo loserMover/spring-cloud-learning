@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.SubscribableChannel;
+import org.springframework.messaging.support.GenericMessage;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -36,6 +37,18 @@ public class MessageService {
                 throw new RuntimeException(e);
             }
         });
+
+        SubscribableChannel subscribableChannelActiveMQ = messageSink.inputActiveMQMessage();
+        subscribableChannelActiveMQ.subscribe(message -> {
+            System.out.println("Subscribe by SubscribableChannel");
+            if (message instanceof GenericMessage){
+                GenericMessage genericMessage = (GenericMessage)message;
+                User user = (User)genericMessage.getPayload();
+                userService.saveUser(user);
+            }
+        });
+
+
     }
 
     @ServiceActivator(inputChannel=MessageSink.INPUT)
@@ -53,6 +66,11 @@ public class MessageService {
         userService.saveUser(user);
     }
 
+    @StreamListener(value = "spring-cloud-stream-active")
+    public void onActiveMQMessage(User user) throws IOException {
+        System.out.println("Subscribe by StreamListener");
+        userService.saveUser(user);
+    }
 
 
 
